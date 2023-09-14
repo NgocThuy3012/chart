@@ -67,14 +67,17 @@ body {
   max-width: 124rem;
   padding: 2rem 2rem;
   margin: 0 auto;
-  background-color: #1A212A
+  background-color: #1A212A;
+  position: relative;
+  overflow: hidden;
 }
 
 .heading {
   padding: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
-  
+  font-weight: 600;
+  color: #ffff;
 }
 
 .swiper_container {
@@ -212,8 +215,14 @@ body {
 .card .name {
   font-size: 24px;
   font-weight: 600;
-  color: #314698;
+  color: #1677ff;
   text-transform: capitalize;
   overflow-wrap: break-word;
   text-align: center;
+}
+
+.logo{
+  width: 3.4rem;
+  height: 3.4rem;
+  object-fit: cover;
 }

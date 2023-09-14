@@ -8,6 +8,7 @@ const CCard = ({data}) => {
             <div className="name">{data.name}</div>
             <div>{data.code}</div>
             <div>{data.class}</div>
+            <div>{data.hometown}</div>
         </div>
     )
 }

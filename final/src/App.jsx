@@ -20,6 +20,7 @@ import slide_image_4 from "./assets/images/img_4.jpg";
 import slide_image_5 from "./assets/images/img_5.jpg";
 import slide_image_6 from "./assets/images/img_6.jpg";
 import slide_image_7 from "./assets/images/img_7.jpg";
+import logo from './assets/images/anh2.png';
 import CCard from "./components/CCard";
 import Confetti from 'react-confetti'
 import { useWindowSize } from "react-use";
@@ -29,61 +30,71 @@ const data = [
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_1,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_2,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_3,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_4,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_5,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
-    img: slide_image_1,
+    img: slide_image_6,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
-    img: slide_image_2,
+    img: slide_image_7,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_3,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_4,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
   {
     name: "Nguyễn Phúc Trần Anh Thư",
     img: slide_image_5,
     class: 'D23_TH01',
-    code: "DH52308976"
+    code: "DH52308976",
+    hometown: 'Bến Tre'
   },
 ]
 
@@ -92,11 +103,14 @@ function App() {
   return (
     <div className="">
       <div className="container ">
+        
       <Confetti
         width={width}
         height={height}
       />
-        <h1 className="heading">Flower Gallery</h1>
+      <div> <img alt="" src={logo} className="logo"/></div>
+     
+        <h1 className="heading">TÂN SINH VIÊN D23</h1>
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
