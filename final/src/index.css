@@ -41,7 +41,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 1.3rem;
+  width: .5rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -60,19 +60,21 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: var(--bg);
+  background: #1A212A;
 }
 
 .container {
   max-width: 124rem;
-  padding: 4rem 1rem;
+  padding: 2rem 2rem;
   margin: 0 auto;
+  background-color: #1A212A
 }
 
 .heading {
   padding: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
+  
 }
 
 .swiper_container {
@@ -85,6 +87,10 @@ body {
   width: 37rem;
   height: 42rem;
   position: relative;
+  background: var(--bg);
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 2rem 1rem;
 }
 
 @media (max-width: 500px) {
@@ -104,7 +110,7 @@ body {
 .swiper-slide img {
   width: 37rem;
   height: 42rem;
-  border-radius: 2rem;
+  
   object-fit: cover;
 }
 
@@ -185,4 +191,29 @@ body {
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
+}
+
+.card {
+  width: 100%;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg);
+}
+
+.card .img img {
+  width: 25rem;
+  height: 27rem;
+  object-fit: cover;
+}
+
+.card .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #314698;
+  text-transform: capitalize;
+  overflow-wrap: break-word;
+  text-align: center;
 }
